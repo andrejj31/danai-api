@@ -14,7 +14,11 @@ dotenv.config({ path: "./config.env" });
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "https://danaifarm.com.mk",
+      "http://danaifarm.com.mk",
+    ],
 
     credentials: true,
 
